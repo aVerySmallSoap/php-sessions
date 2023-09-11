@@ -27,6 +27,8 @@
     padding: 15px 0 15px 0;
     flex: 1 0 50%;
     font-family: "Poppins", sans-serif;
+    width: 300px;
+    min-width: 300px;
 }
 
 .title-container{
@@ -44,11 +46,10 @@
 }
 
 #main-form{
-    flex-basis: 100%;
+    flex: 1 0 100%;
 }
 
 .form-row{
-    display: grid;
     box-sizing: border-box;
     grid-template: 35% 50% 15% / 25% 50% 25%;
 }
@@ -58,9 +59,7 @@
 }
 
 .form-row input{
-    grid-column: 2 / 3;
-    grid-row: 2;
-    margin: 5px;
+    margin: 5px 0 0 75px;
     padding: 8px;
     font-family: "Poppins", sans-serif;
     border-radius: 25px;
@@ -72,7 +71,7 @@
     grid-column: 2;
     width: 25%;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 0 0 50px;
     font-family: "Poppins", sans-serif;
     border: none;
     border-radius: 8px;

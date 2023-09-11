@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/error.css">
     <title>Login</title>
 </head>
 <body style="background-color: #FFF3DA;">
@@ -39,5 +43,14 @@
         </div>
     </div>
 
+    <script src="./JS/errors.js"></script>
 </body>
 </html>
+<?php
+if(isset($_SESSION["status"])){
+    if($_SESSION["status"] == "error"){
+        echo $_SESSION["status"];
+        echo "<script>createError('Please fill out the fields!')</script>";
+    }
+}
+?>

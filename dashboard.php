@@ -8,31 +8,24 @@ session_start();
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./CSS/grid.css">
+    <link rel="stylesheet" href="./CSS/no-margin.css">
     <link rel="stylesheet" href="./CSS/dashboard.css">
     <title>Dashboard</title>
 </head>
 <body>
-    <div class="header">
-        <div class="left">
-            <button onclick=""></button>
-        </div>
-        <div class="right">
-            <ol>
-                <li class="head-item">
-                    <a href="#"></a>
-                </li>
-                <li class="head-item">
-                    <a href="#"></a>
-                </li>
-                <li class="head-item">
-                    <a href="#"></a>
-                </li>
-            </ol>
-            <span id="title-logo"></span>
+
+    <div class="container">
+        <div class="inner-container">
+            <div id="title-container">
+                Welcome <?php echo "<span class='title-username'>". $_SESSION["username"] ."</span>"?>!
+            </div>
+            <div id="subtitle-container">This is the dashboard!</div>
+            <div class="container-body">
+                <form action="./operations/logout.php" method="post">
+                    <button class="btn">Log-out</button>
+                </form>
+            </div>
         </div>
     </div>
-
-    <?php echo $_SESSION["username"]?>
 </body>
 </html>
