@@ -1,0 +1,15 @@
+@import "fonts.css";
+
+.error{
+    font-family: "Poppins", sans-serif;
+    color: red;
+    margin: 15px 0 0 25px;
+}
+
+.emphasized{
+    font-weight: bold;
+}
+
+.message{
+
+}
